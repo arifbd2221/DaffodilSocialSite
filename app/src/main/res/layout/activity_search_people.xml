@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/root_layout_search"
+
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    tools:context="com.socialsite.daffodilvarsity.activities.SearchPeople">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:elevation="4dp"
+        android:fitsSystemWindows="true"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        >
+        <EditText
+            android:id="@+id/search_field"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/search_btn"
+            android:background="@drawable/search_layout"
+            android:ems="10"
+            android:hint="Search here"
+            android:inputType="textPersonName"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:nextFocusUp="@+id/search_field"
+            android:nextFocusLeft="@+id/search_field"
+            android:layout_toLeftOf="@+id/search_btn" />
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/search_field"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/search_field"
+            android:background="@android:color/background_light"
+            app:srcCompat="@mipmap/search_button"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/result_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchbar"
+        android:layout_marginTop="50dp"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name:"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:id="@+id/id1"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id1"
+        android:textColor="@color/primary_dark_text"
+        android:id="@+id/full_name_text"
+        android:layout_marginLeft="5dp"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_edit_menu_item"
+        android:background="#bebfbb"
+        android:id="@+id/edit_profile_name"
+        android:layout_below="@+id/id1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    </RelativeLayout>
+
+        <include layout="@layout/custom_divider"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/id2"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id2"
+                android:textColor="@color/primary_dark_text"
+                android:id="@+id/phone_text"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_edit_menu_item"
+                android:background="#bebfbb"
+                android:id="@+id/edit_profile_phone"
+                android:layout_below="@+id/id2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/custom_divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birthday:"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/id3"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id3"
+                android:textColor="@color/primary_dark_text"
+                android:id="@+id/birthday_text"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_edit_menu_item"
+                android:background="#bebfbb"
+                android:id="@+id/edit_profile_birthday"
+                android:layout_below="@+id/id3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/custom_divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/id4"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id4"
+                android:textColor="@color/primary_dark_text"
+                android:id="@+id/email_text"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_edit_menu_item"
+                android:background="#bebfbb"
+                android:id="@+id/edit_profile_email"
+                android:layout_below="@+id/id4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/custom_divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Varsity ID:"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/id5"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id5"
+                android:textColor="@color/primary_dark_text"
+                android:id="@+id/varsityid_text"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_edit_menu_item"
+                android:background="#bebfbb"
+                android:id="@+id/edit_profile_varsityid"
+                android:layout_below="@+id/id5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/custom_divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department:"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/id6"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id6"
+                android:textColor="@color/primary_dark_text"
+                android:id="@+id/varsitydepartment_text"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_edit_menu_item"
+                android:background="#bebfbb"
+                android:id="@+id/edit_profile_department"
+                android:layout_below="@+id/id6"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/custom_divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batch No:"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/id7"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id7"
+                android:textColor="@color/primary_dark_text"
+                android:id="@+id/varsitybatchno_text"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_edit_menu_item"
+                android:background="#bebfbb"
+                android:id="@+id/edit_profile_varsitybatchno"
+                android:layout_below="@+id/id7"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/custom_divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Section:"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/id8"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id8"
+                android:textColor="@color/primary_dark_text"
+                android:id="@+id/varsitysection_text"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_edit_menu_item"
+                android:background="#bebfbb"
+                android:id="@+id/edit_profile_varsitysection"
+                android:layout_below="@+id/id8"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/custom_divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maritial Status:"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/id9"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id9"
+                android:textColor="@color/primary_dark_text"
+                android:id="@+id/maritialstatus_text"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_edit_menu_item"
+                android:background="#bebfbb"
+                android:id="@+id/edit_profile_maritialstatus"
+                android:layout_below="@+id/id9"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/custom_divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/id10"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id10"
+                android:textColor="@color/primary_dark_text"
+                android:id="@+id/gender_text"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_edit_menu_item"
+                android:background="#bebfbb"
+                android:id="@+id/edit_profile_gender"
+                android:layout_below="@+id/id10"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/custom_divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age:"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/id11"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id11"
+                android:textColor="@color/primary_dark_text"
+                android:id="@+id/age_text"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_edit_menu_item"
+                android:background="#bebfbb"
+                android:id="@+id/edit_profile_age"
+                android:layout_below="@+id/id11"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

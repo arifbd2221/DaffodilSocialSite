@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/root"
+        >
+
+        <com.socialsite.daffodilvarsity.views.CircularImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/search_profile_photo"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/progress_bar_size"
+            android:layout_height="@dimen/progress_bar_size"
+            android:visibility="visible"
+            android:layout_margin="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_profile_name"
+            android:layout_toRightOf="@+id/search_profile_photo"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/primary"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_profile_varsity_id"
+            android:layout_below="@+id/search_profile_name"
+            android:layout_toRightOf="@+id/search_profile_photo"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_profile_batch"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_below="@+id/search_profile_name"
+            android:layout_toRightOf="@+id/search_profile_varsity_id"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_profile_section"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_below="@+id/search_profile_name"
+            android:layout_toRightOf="@+id/search_profile_batch"
+            android:layout_marginLeft="5dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/search_profile_photo"
+            android:layout_below="@+id/search_profile_varsity_id"
+            android:id="@+id/search_profile_interest"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/search_profile_photo"
+            android:layout_below="@+id/search_profile_interest"
+            android:id="@+id/search_profile_workings"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            />
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="#d2d6df"
+            android:id="@+id/select_this_person_for_group"
+            android:layout_below="@+id/search_profile_workings"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

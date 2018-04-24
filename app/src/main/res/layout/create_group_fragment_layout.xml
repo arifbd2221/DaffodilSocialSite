@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:id="@+id/root_layout_search"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchbar"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        >
+        <EditText
+            android:id="@+id/group_name"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/create_group"
+            android:background="@drawable/search_layout"
+            android:ems="10"
+            android:hint="Group Name"
+            android:inputType="text"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:nextFocusUp="@+id/group_name"
+            android:nextFocusLeft="@+id/group_name"
+            android:layout_toLeftOf="@+id/create_group" />
+
+        <ImageButton
+            android:id="@+id/create_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/group_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/group_name"
+            android:background="@android:color/background_light"
+            app:srcCompat="@mipmap/create_group"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/result_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchbar"
+        android:layout_marginTop="50dp"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

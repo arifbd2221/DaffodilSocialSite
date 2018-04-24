@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.socialsite.daffodilvarsity">
+
+    <uses-sdk
+        android:maxSdkVersion="26"
+        android:minSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.PostDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/label_post_detail_activity" />
+        <activity
+            android:name=".activities.CreatePostActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/label_create_post_activity" />
+        <activity
+            android:name=".activities.ImageDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/label_image_detail_activity"
+            android:theme="@style/AppCompat.Black.NoActionBar" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppCompat.NoActionBar" />
+        <activity
+            android:name=".activities.CreateProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_create_profile" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppCompat.NoActionBar" />
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_edit_profile" />
+        <activity
+            android:name=".activities.EditPostActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_edit_post" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key_google_places" />
+
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="84e05e27c9fcba7e1de6a47e355a1aa247264a46" />
+
+        <service android:name=".services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activities.SearchPeople"
+            android:theme="@style/AppCompat.NoActionBar"
+            />
+        <activity android:name=".activities.ChatListActivity"
+            android:theme="@style/AppCompat.NoActionBar"
+            />
+
+        <activity android:name=".activities.ChatActivity"
+            android:theme="@style/AppCompat.NoActionBar"
+            />
+
+        <activity android:name=".activities.FullScreenImageActivity"
+            android:theme="@style/AppThemeFullScreenImage"
+            />
+
+        <activity android:name=".activities.GroupActivity"
+            android:theme="@style/AppCompat.NoActionBar"
+            />
+
+        <activity android:name=".activities.GroupChatActivity"
+            android:theme="@style/AppCompat.NoActionBar"
+            />
+
+    </application>
+
+</manifest>
