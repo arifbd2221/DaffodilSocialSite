@@ -4,5 +4,7 @@ User can post,also coment on post. User can chat with each other one to one. Als
 user can create a group for chatting. For chatting this application has lots of emojies
 just like the whatsapp. User can search anothet using
 by varsity, Departmen, batch etc. It just work like the Facebook application does.
-It has google Authentication integrate. User can setup their profile by google accoun. 
+It has google Authentication integrate. User can setup their profile by google account.
+Firebase database is the backend. Any post simultaneously reaches to other users.
+Also for chatting the messages instantly reach to the desired user.    
       
